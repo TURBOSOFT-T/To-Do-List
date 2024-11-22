@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^cuzdan/(.*)$ /$1 [L,R=301]
+
+
