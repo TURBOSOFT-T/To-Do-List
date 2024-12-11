@@ -23,27 +23,29 @@
 <br>
 <div id="wrapper" class="wrapper">
     <div id="login-title" class="title">Connexion</div>
-    <form class="h-add-bottom" method="POST" action="{{ route('login') }}">
+
+
+{{-- 
+    @livewire('auth.connexion') --}}
+     <form class="h-add-bottom" method="POST" action="{{ route('login') }}">
         @csrf
 
-        <!-- Email Address -->
+       
         <div class="field">
-            {{--
-            <x-auth.input-email /> --}}
+           
             <label>E_mail</label>
             <input id="email" type="email" name="email"
                  required>
         </div>
         <div class="field">
-            <!-- Password -->
-            {{-- <x-auth.input-password /> --}}
+           
             <label>Mot de passes</label>
-            <input id="password" {{-- class="h-full-width" --}} type="password" name="password" required>
+            <input id="password"  type="password" name="password" required>
         </div>
 
 
 
-        <!-- Remember Me -->
+      
        <div class="content">
             <div class="checkbox">
 
@@ -63,7 +65,7 @@
         <a href="{{ route('register') }}">Inscrivez vous ici!</a>
     </div>
 
-    </form>
+    </form> 
 </div>
 
 
